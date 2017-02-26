@@ -64,7 +64,34 @@ Click the logo --><a href="www.huawei.com"><img src="http://www.huawei.com/Asset
 </ol>
 <hr/>
 
+<form>
+    <fieldset>
+        <legend>User Info</legend>
+        User Name: <input type="text" name="name">
+        Password: <input type="password" name="password"><br/>
 
+
+        Remember me: <input type="checkbox" name="remember"><br/>
+
+        Select your sex:
+        <input type="radio" checked="checked" name="Sex" value="male"/>Male
+        <input type="radio" name="Sex" value="female"/>Female<br/>
+
+        Select your country:
+        <select name="countries">
+            <option value="China">China</option>
+            <option value="USA">USA</option>
+            <option value="India">India</option>
+            <option value="Japan">Japan</option>
+        </select><br/>
+
+        Please introduce yourself:<br/>
+        <textarea cols="80" rows="5"></textarea><br/>
+
+        <input type="button" value="Submit" onclick="alert('Submit successfully!')">
+
+    </fieldset>
+</form>
 <hr/>
 
 
