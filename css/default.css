@@ -1,4 +1,15 @@
-h1 {
-    color: red;
+.headDiv {
+    background-color: antiquewhite;
+    font-family: sans-serif;
+    text-align: center;
 }
 
+.headDiv > h2 {
+    text-align: left;
+    color: darkmagenta;
+}
+
+.headDiv > h5 {
+    font-family: serif;
+    text-align: right;
+}
