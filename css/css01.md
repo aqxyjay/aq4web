@@ -161,6 +161,7 @@ ul#drink {font-weight:bold;}
 ```
 
 **注意！**
+
 1. ID只能使用一次
 2. 一个元素不能有多个ID
 3. 区分大小写
@@ -191,7 +192,7 @@ p[class="first html"] {color: red;}
 p[class~="html"] {color: red;}
 ```
 
-CSS 选择器参考手册
+CSS 选择器参考手册  
 选择器 | 描述
 [attribute] | 用于选取带有指定属性的元素。
 [attribute=value] | 用于选取带有指定属性和值的元素。
