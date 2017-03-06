@@ -1,16 +1,43 @@
-.headDiv {
-    background-color: antiquewhite;
-    font-family: sans-serif;
-    text-align: center;
+body {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size: 13.5px;
+    line-height: 15px;
+    background-image: url(../pic/background.jpg);
+    background-repeat: no-repeat;
 }
 
-.headDiv > h2 {
-    text-align: left;
-    color: darkmagenta;
+h1 {
+    font-size: 2.4em;
+    line-height: 1.8em;
+    color: #FF4500;
 }
 
-.headDiv > h5 {
-    font-family: serif;
-    text-align: right;
-    padding-right: 10%;
+h2 {
+    font-size: 2.2em;
+    line-height: 1.6em;
+    color: #FF6347;
+}
+
+h3 {
+    font-size: 2.0em;
+    line-height: 1.4em;
+    color: #FF7F50;
+}
+
+h4 {
+    font-size: 1.8em;
+    line-height: 1.2em;
+    color: #FF8C00;
+}
+
+h5 {
+    font-size: 1.6em;
+    line-height: 1em;
+    color: #FFA07A;
+}
+
+h6 {
+    font-size: 1.4em;
+    line-height: 0.8em;
+    color: #FFB6C1;
 }
