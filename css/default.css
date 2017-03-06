@@ -3,6 +3,7 @@ body {
     font-size: 13.5px;                                  /*设置字体的尺寸为13.5像素*/
     line-height: 15px;                                  /*设置行高位15像素*/
     background-image: url(../pic/background.jpg);       /*把图像设置为背景*/
+    background-color: rgb(242, 241, 237);             /*设置背景颜色*/
     background-repeat: no-repeat;                       /*设置背景图像是否及如何重复*/
 }
 
