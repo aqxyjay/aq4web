@@ -1,15 +1,19 @@
 body {
-    font-family: 'Trebuchet MS', Helvetica, sans-serif;
-    font-size: 13.5px;
-    line-height: 15px;
-    background-image: url(../pic/background.jpg);
-    background-repeat: no-repeat;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif; /*设置字体系列*/
+    font-size: 13.5px;                                  /*设置字体的尺寸为13.5像素*/
+    line-height: 15px;                                  /*设置行高位15像素*/
+    background-image: url(../pic/background.jpg);       /*把图像设置为背景*/
+    background-repeat: no-repeat;                       /*设置背景图像是否及如何重复*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-style: italic;     /*设置字体风格为斜体*/
 }
 
 h1 {
-    font-size: 2.4em;
-    line-height: 1.8em;
-    color: #FF4500;
+    font-size: 2.4em;       /*设置字体的尺寸是13.5的2.4倍*/
+    line-height: 1.8em;     /*设置行高为15像素的1.8倍*/
+    color: #FF4500;       /*设置元素颜色，支持16进制/RGB/RGBA/HSL/HSLA/颜色名*/
 }
 
 h2 {
@@ -40,4 +44,22 @@ h6 {
     font-size: 1.4em;
     line-height: 0.8em;
     color: #FFB6C1;
+}
+
+p#paragraph {
+    text-indent: 2em;       /*缩进元素中文本的首行*/
+}
+
+p.first {
+    text-align: center;             /*居中对齐元素中的文本*/
+    word-spacing: 0.5em;            /*设置字间距*/
+    letter-spacing: 0.5em;          /*设置字符间距*/
+    text-transform: uppercase;      /*控制元素中的字母，转换为大写*/
+    text-decoration: line-through;  /*向文本添加修饰，删除线*/
+    font-weight: 900;               /*设置字体的粗细，100-900*/
+}
+
+p.breaker {
+    text-decoration: overline;      /*向文本添加修饰，上划线*/
+    font-variant: small-caps;       /*以小型大写字体显示文本*/
 }
