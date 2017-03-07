@@ -96,3 +96,49 @@ a.huawei:active {
     text-decoration: underline;
     color: yellowgreen;           /*鼠标点击时，改变颜色*/
 }
+
+#cartoon {
+    width: 50%;                     /*占据50%页面宽度*/
+    border-collapse: collapse;      /*设置把表格边框合并为单一的边框*/
+    text-align: left;               /*设置文本左对齐*/
+}
+
+#cartoon th {
+    font-size: 1.2em;
+    padding-top: 5px;               /*设置顶部内边距5px*/
+    padding-bottom: 3px;            /*设置底部内边距3px*/
+    background-color: #F08080
+}
+
+#cartoon td, #cartoon th {
+    border: 1px solid Black;      /*设置边框1px，实线，黑色*/
+    padding:2px 8px 2px 8px;        /*上、右、下、左*/
+}
+
+#cartoon tr td {
+    background-color: #FFC0CB;
+    opacity: 0.8;
+}
+
+caption {
+    caption-side: bottom;           /*设置表格标题位置在底部*/
+    padding-top: 2px;
+    font-size: 1.1em;
+    font-weight: 900;
+}
+
+ul#drink {
+    list-style-image: url(../pic/heart.png);    /*以图像作为无序列表标签*/
+}
+
+ol.papa {
+    list-style-type: hiragana;                  /*以日文片假名作为顺序列表标签*/
+    outline-style: double;                      /*设置轮廓的样式*/
+    outline-color: #4682B4;                   /*设置轮廓的颜色*/
+    outline-width: 5px;                         /*设置轮廓的宽度*/
+}
+
+ul.papa {
+    list-style-type: square;
+    list-style-position: inside;                /*列表项目标记放置在文本以内，且环绕文本根据标记对齐*/
+}
