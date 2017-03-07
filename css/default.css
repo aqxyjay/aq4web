@@ -1,6 +1,6 @@
 body {
     font-family: 'Trebuchet MS', Helvetica, sans-serif; /*设置字体系列*/
-    font-size: 13.5px;                                  /*设置字体的尺寸为13.5像素*/
+    font-size: 14px;                                  /*设置字体的尺寸为14像素*/
     line-height: 15px;                                  /*设置行高位15像素*/
     background-image: url(../pic/background.jpg);       /*把图像设置为背景*/
     background-color: rgb(242, 241, 237);             /*设置背景颜色*/
@@ -44,7 +44,7 @@ h5 {
 h6 {
     font-size: 1.4em;
     line-height: 0.8em;
-    color: #FFB6C1;
+    color: #FFE4B5;
 }
 
 p#paragraph {
@@ -63,4 +63,36 @@ p.first {
 p.breaker {
     text-decoration: overline;      /*向文本添加修饰，上划线*/
     font-variant: small-caps;       /*以小型大写字体显示文本*/
+}
+
+img.huawei {
+    opacity: 0.5;                   /*以0.5透明度显示图片*/
+}
+
+img.huawei:hover {
+    opacity: 1.0;                   /*鼠标悬停时，以0.5透明度显示图片*/
+}
+
+img.huawei:active {
+    opacity: 0.5;                   /*鼠标点击时，以0.5透明度显示图片*/
+}
+
+a.huawei:link {
+    text-decoration: none;          /*无装饰超链接*/
+    color: purple;
+}
+
+a.huawei:visited {
+    text-decoration: none;
+    color: mediumpurple;          /*以mediumpurple显示访问过的超链接*/
+}
+
+a.huawei:hover {
+    text-decoration: underline;     /*鼠标悬停时，显示超链接下划线*/
+    color: rebeccapurple;
+}
+
+a.huawei:active {
+    text-decoration: underline;
+    color: yellowgreen;           /*鼠标点击时，改变颜色*/
 }
