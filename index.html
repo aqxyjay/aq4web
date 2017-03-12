@@ -1,109 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>My First Web Page</title>
     <link rel="stylesheet" href="css/default.css">
 </head>
+
 <body>
-<div class="headDiv">
-    <h1 name="first_head">My First Heading</h1>
-    <h2>My Second Heading</h2>
-    <h3>My Third Heading</h3>
-    <h4>My Forth Heading</h4>
-    <H5>My Fifth Heading</H5>
-    <h6>My sixth Heading</h6>
-</div>
+    <div class="headDiv">
+        <h1 name="first_head">My First Heading</h1>
+        <h2>My Second Heading</h2>
+        <h3>My Third Heading</h3>
+        <h4>My Forth Heading</h4>
+        <H5>My Fifth Heading</H5>
+        <h6>My sixth Heading</h6>
+    </div>
 
-<hr/>
+    <hr/>
 
-<p id="paragraph" class="first">My first paragraph.</p>
-<p id="paragraph" class="breaker">This is a line <br/> breaker</p>
-<hr/>
+    <p id="paragraph" class="first">My first paragraph.</p>
+    <p id="paragraph" class="breaker">This is a line <br/> breaker</p>
+    <hr/>
 
-<img class="huawei logo" src="http://www.huawei.com/Assets/CBG/img/logo.png" alt="The logo of Huawei"><br/>
-<a class="huawei link" href="http://www.huawei.com" target="_blank">Open Huawei official website in a new window.</a><br/>
-Click the logo --><a class="huawei logo link" href="http://www.huawei.com"><img class="huawei logo" src="http://www.huawei.com/Assets/CBG/img/logo.png"
-                                                       align="middle"/></a><br/>
-<hr/>
+    <img class="huawei logo" src="http://www.huawei.com/Assets/CBG/img/logo.png" alt="The logo of Huawei"><br/>
+    <a class="huawei link" href="http://www.huawei.com" target="_blank">Open Huawei official website in a new window.</a><br/>    Click the logo -->
+    <a class="huawei logo link" href="http://www.huawei.com"><img class="huawei logo" src="http://www.huawei.com/Assets/CBG/img/logo.png" align="middle" /></a><br/>
+    <hr/>
 
-<table id="cartoon">
-    <caption>Tom & Jerry Table Title</caption>
-    <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Address</th>
-    </tr>
-    <tr>
-        <td>Tom</td>
-        <td>20</td>
-        <td>JinYeLu</td>
-    </tr>
-    <tr>
-        <td>Jerry</td>
-        <td>15</td>
-        <td rowspan="2">JinYeErLu</td>
-    </tr>
-    <tr>
-        <td>Little Jerry</td>
-        <td>5</td>
-    </tr>
-</table>
-<hr/>
+    <table id="cartoon">
+        <caption>Tom & Jerry Table Title</caption>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>Tom</td>
+            <td>20</td>
+            <td>JinYeLu</td>
+        </tr>
+        <tr>
+            <td>Jerry</td>
+            <td>15</td>
+            <td rowspan="2">JinYeErLu</td>
+        </tr>
+        <tr>
+            <td>Little Jerry</td>
+            <td>5</td>
+        </tr>
+    </table>
+    <hr/>
 
-<ul id="drink">
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-</ul>
+    <ul id="drink">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
 
-<ol class="papa">
-    <li>Apple</li>
-    <li>Pen</li>
-    <li>Apple Pen
-        <ul class="papa">
-            <li>Orange Pen</li>
-            <li>Strawberry Pen</li>
-        </ul>
-    </li>
-</ol>
-<hr/>
+    <ol class="papa">
+        <li>Apple</li>
+        <li>Pen</li>
+        <li>Apple Pen
+            <ul class="papa">
+                <li>Orange Pen</li>
+                <li>Strawberry Pen</li>
+            </ul>
+        </li>
+    </ol>
+    <hr/>
 
-<form>
-    <fieldset>
-        <legend>User Info</legend>
-        User Name: <input type="text" name="name">
-        Password: <input type="password" name="password"><br/>
+    <div id="profile-form">
+        <form>
+            <fieldset>
+                <legend>User Info</legend>
+                <label for="name" id="name-label">Name: <span class="required">*</span></label>
+                <input type="text" id="name" name="name" value="" placeholder="Zhang Chunxin" required="required" autofocus="autofocus" />
+                <label for="password" id="password-label">Password: <span class="required">*</span></label>
+                <input type="password" id="password" name="password" required="required" /><br/> Remember me: <input type="checkbox"
+                    id="remember-me" name="remember" checked="checked" /><br/>
 
+                <label for="sex">Select your sex:</label>
+                <input type="radio" checked="checked" name="Sex" value="male" />Male
+                <input type="radio" name="Sex" value="female" />Female<br/>
 
-        Remember me: <input type="checkbox" name="remember"><br/>
-
-        Select your sex:
-        <input type="radio" checked="checked" name="Sex" value="male"/>Male
-        <input type="radio" name="Sex" value="female"/>Female<br/>
-
-        Select your country:
-        <select name="countries">
+                <label for="countries" id="countries-label">Select your country:</label>
+                <select id="countries" name="countries">
             <option value="China">China</option>
             <option value="USA">USA</option>
             <option value="India">India</option>
             <option value="Japan">Japan</option>
         </select><br/>
 
-        Please introduce yourself:<br/>
-        <textarea cols="80" rows="5"></textarea><br/>
+                <label for="intro">Please introduce yourself:<br/>
+        <textarea id="intro" placeholder="Your profile introduce must be greater than 20 characters..."></textarea></label><br/>
 
-        <input type="button" value="Submit" onclick="alert('Submit successfully!')">
+                <input type="button" id="submit-button" value="Submit" onclick="alert('Submit successfully!')">
+            </fieldset>
+        </form>
+    </div>
 
-    </fieldset>
-</form>
-<hr/>
 
-
-<address>
-    Written by <a href="mailto:zhangchunxin@huawei.com">Zhangchunxin</a>.<br>
-    Visit me at: N0. 127, JinYeLu, Xi'an<br>
-</address>
+    <address>
+        Written by <a href="mailto:zhangchunxin@huawei.com">Zhangchunxin</a>.<br> Visit me at: N0. 127, JinYeLu, Xi'an<br>
+    </address>
 
 </body>
+
 </html>

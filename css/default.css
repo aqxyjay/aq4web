@@ -1,6 +1,6 @@
 body {
     font-family: 'Trebuchet MS', Helvetica, sans-serif; /*设置字体系列*/
-    font-size: 14px;                                  /*设置字体的尺寸为14像素*/
+    font-size: 14px;                                    /*设置字体的尺寸为14像素*/
     line-height: 15px;                                  /*设置行高位15像素*/
     background-image: url(../pic/background.jpg);       /*把图像设置为背景*/
     background-color: rgb(242, 241, 237);             /*设置背景颜色*/
@@ -61,8 +61,23 @@ p.first {
 }
 
 p.breaker {
-    text-decoration: overline;      /*向文本添加修饰，上划线*/
-    font-variant: small-caps;       /*以小型大写字体显示文本*/
+    width: 120px;
+    background-color: #dda680;
+    opacity: 0.6;
+    text-decoration: overline;                  /*向文本添加修饰，上划线*/
+    font-variant: small-caps;                   /*以小型大写字体显示文本*/
+    transition: All 1s ease-in-out;
+    -webkit-transition: All 1s ease-in-out;
+    -moz-transition: All 1s ease-in-out;
+    -o-transition: All 1s ease-in-out;
+}
+
+p.breaker:hover {
+    transform: translate(50px,0);               /*右移50px*/
+    -webkit-transform: translate(50px,0);
+    -moz-transform: translate(50px,0);
+    -o-transform: translate(50px,0);
+    -ms-transform: translate(50px,0);
 }
 
 img.huawei {
@@ -141,4 +156,123 @@ ol.papa {
 ul.papa {
     list-style-type: square;
     list-style-position: inside;                /*列表项目标记放置在文本以内，且环绕文本根据标记对齐*/
+}
+
+#profile-form {
+    padding-bottom: 30px;
+}
+
+fieldset {
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    background-color: #F2F7F9;
+    border: 3px solid #8FB5C1;
+    border-radius: 15px;                        /*创建圆角边框*/
+    -moz-border-radius: 15px;                   /*兼容老的FireFox*/
+    -webkit-border-radius: 15px;                /*兼容Safari和Chrome*/
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+#name-label,
+#password-label,
+#countries-label {
+    display: block;                             /*label按照块状布局*/
+}
+
+#profile-form input,
+#profile-form select,
+#profile-form textarea,
+#profile-form label {
+    font-size: 1em;
+    margin-bottom: 5px;                         /*底部外边距5px*/
+}
+
+#name,
+#password,
+#profile-form select,
+#profile-form textarea {
+    width: 450px;
+    border: 1px solid #CEE1E8;
+    margin-bottom: 20px;
+    padding: 4px;
+}
+
+/*获取焦点是设置边框和背景颜色*/
+#profile-form input:focus,
+#profile-form select:focus,
+#profile-form textarea:focus {
+    border: 1px solid #AFCDD8;
+    background-color: #EBF2F4;
+}
+
+#profile-form textarea {
+    height: 150px;
+    width: 90%;
+    resize: none;
+}
+
+#profile-form .required {
+    font-weight: bold;
+    color: #F00;
+}
+
+#profile-form #submit-button {
+    width: 80px;
+    height: 24px;
+    background-color: #333;
+    color: #FFF;
+    border: none;
+    display: block;
+    float: left;                                    /*左侧浮动*/
+    margin-bottom: 0px;
+    margin-right: 6px;
+    background-color: #8FB5C1;
+    border-radius: 8px;                             /*设置边框圆角*/
+    -moz-border-radius: 8px;
+}
+
+#profile-form #submit-button:hover {
+    background-color: #A6CFDD;
+}
+
+#contact-form #submit-button:active {
+    position: relative;
+    top: 1px;
+}
+
+#req-field-desc {
+    font-style: italic;
+}
+
+/*设置placeholder样式*/
+::-webkit-input-placeholder {
+    color: #CCC;
+    font-style: italic;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #CCC;
+    font-style: italic;
+}
+
+input.placeholder-text,
+textarea.placeholder-text {
+    color: #CCC;
+    font-style: italic;
+}
+
+address {
+    position: fixed;                            /*固定位置，左下角*/
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.5;
+    text-align: center;
 }
