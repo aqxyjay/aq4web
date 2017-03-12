@@ -167,6 +167,7 @@ fieldset {
     margin: 10px;
     width: 60%;
     background-color: #F2F7F9;
+    opacity: 0.95;
     border: 3px solid #8FB5C1;
     border-radius: 15px;                        /*创建圆角边框*/
     -moz-border-radius: 15px;                   /*兼容老的FireFox*/
